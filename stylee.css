@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(213, 220, 233);
+  }
+
+  .textcontainer{
+    height: 12rem;
+    width: 75rem;
+    margin-top: 3rem;
+    background: whitesmoke;
+    margin-left: 3.5rem;
+    box-shadow: 0 0 8px gray;
+    border-radius: 0.5rem;
+    font-family: sans-serif;
+    outline: none;
+    padding: 1.5rem;
+  }
+  
+  .container {
+    display: grid;
+    margin: 5.5rem;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    width: 70rem;
+    height: 20.6rem;
+    justify-content: start;
+    background: black;
+    border-radius: 0.5rem;
+  }
+  
+  .container1 {
+    display: grid;
+    gap: 0.1rem;
+    justify-content: center;
+    grid-template-areas: "esc f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 prt del ";
+  }
+  
+  .container2 {
+    display: grid;
+    gap: 0.2rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    grid-template-areas: "tilde one two three four five six seven eight nine zero round1 round2 dash equal bksp ";
+  }
+  
+  .container3 {
+    display: grid;
+    gap: 0.65rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    grid-template-areas: "tab q w e r t y u i o p curly1 curly2 fslash";
+  }
+  
+  .container4 {
+    display: grid;
+    grid-template-areas: "capslock a s d f g h j k l colon quote enter";
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .container5 {
+    gap: 0.7rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-areas: "shift1 z x c v b n m comma fullstop bslash  shift2";
+  }
+  
+  .container6 {
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-areas: "ctrl1 fn window alt1 space alt2  ctrl2 leftarrow downarrow rightarrow ";
+   
+  }
+  .row1 {
+    margin: 0.1rem;
+    height: 2.5rem;
+    width: 3.2rem;
+    background-color: silver;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 0.11rem solid rgba(19, 17, 17, 0.377);
+    border-radius: 0.5rem;
+  }
+  
+  .row2 {
+    margin: 0.1rem;
+    height: 2.5rem;
+    width: 2.55rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: silver;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377);
+  }
+  
+  .row3 {
+    margin: 0.1rem;
+    height: 2.5rem;
+    width: 2.93rem;
+    gap: 4rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: silver;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377);
+  }
+  
+  .row4 {
+    margin: 0.1rem;
+    gap: 4rem;
+    height: 2.5rem;
+    width: 3.2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: silver;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377);
+  }
+  
+  .row5 {
+    margin: 0.1rem;
+    height: 2.5rem;
+    width: 3.25rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: aqua;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377);
+  }
+  
+  .row6 {
+    margin: 0.1rem;
+    height: 2.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: aqua;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377);
+  }
+  
+  #esc {
+    grid-area: "esc";
+    background-color:silver;
+  }
+  #f1 {
+    grid-area: "f1";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  
+  #f2 {
+    grid-area: "f2";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #f3 {
+    grid-area: "f3";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #f4 {
+    grid-area: "f4";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #f5 {
+    grid-area: "f5";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #f6 {
+    grid-area: "f6";
+    background-color: silvere;
+    border-radius: 0.5rem;
+  }
+  #f7 {
+    grid-area: "f7";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #f8 {
+    grid-area: "f8";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  #f9 {
+    grid-area: "f9";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  
+  #f10 {
+    grid-area: "f10";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #f11 {
+    grid-area: "f11";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #f12 {
+    grid-area: "f12";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #prt {
+    grid-area: "prt";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #del {
+    grid-area: "del";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  
+  #tild {
+    grid-area: "tilde";
+    background-color: silver;
+    border-radius: 0.5rem;
+    width: 2.5rem;
+  }
+  #one {
+    grid-area: "1";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #two {
+    grid-area: "2";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #three {
+    grid-area: "3";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #four {
+    grid-area: "4";
+    background-color: silvere;
+    border-radius: 0.5rem;
+  }
+  #five {
+    grid-area: "5";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #six {
+    grid-area: "6";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #seven {
+    grid-area: "7";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #eight {
+    grid-area: "8";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  #nine {
+    grid-area: "9";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #zero {
+    grid-area: "0";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  #round1 {
+    grid-area: "round1";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #round2 {
+    grid-area: "round1";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #dash {
+    grid-area: "round1";
+    background-color: silver;
+    border-radius: 0.5rem;
+    
+  }
+  #equal {
+    grid-area: "equal";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  #bksp {
+    grid-area: "bksp";
+    background-color: silver;
+    border-radius: 0.5rem;
+    width: 8rem;
+  }
+  #numlock {
+    grid-area: "numlock";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #divide {
+    grid-area: "divide";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #asterisk {
+    grid-area: "asterisk";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #minus {
+    grid-area: "minus";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #tab {
+    grid-area: "tab";
+    background-color: silver;
+    border-radius: 0.5rem;
+    width: 3.5rem;
+  }
+  #q {
+    grid-area: "q";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #w {
+    grid-area: "w";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #e {
+    grid-area: "e";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #r {
+    grid-area: "r";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #t {
+    grid-area: "t";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #y {
+    grid-area: "y";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #u {
+    grid-area: "u";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #i {
+    grid-area: "i";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #o {
+    grid-area: "o";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #p {
+    grid-area: "p";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #curly1 {
+    grid-area: "lcurlybrace";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #curly2 {
+    grid-area: "rcurlybrace";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #fslash {
+    grid-area: "fslash";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  
+  #plus {
+    grid-area: "plus";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  
+  #capslock {
+    grid-area: "capslock";
+    background-color:silver;
+    border-radius: 0.5rem;
+    width: 5rem;
+    
+  }
+  #a {
+    grid-area: "a";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #s {
+    grid-area: "s";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #d {
+    grid-area: "d";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #f {
+    grid-area: "f";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #g {
+    grid-area: "g";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  #h {
+    grid-area: "h";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #j {
+    grid-area: "j";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #k {
+    grid-area: "k";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #l {
+    grid-area: "l";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #colon {
+    grid-area: "colon";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #quote {
+    grid-area: "quote";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #enter {
+    grid-area: "enter";
+    background-color: silver;
+    border-radius: 0.5rem;
+    width: 3.5rem;
+  }
+  
+  #shift1 {
+    grid-area: "shift1";
+    background-color: silver;
+    border-radius: 0.5rem;
+    margin-left: 0rem;
+    width: 5rem;
+  }
+  #z {
+    grid-area: "z";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  #x {
+    grid-area: "x";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #c {
+    grid-area: "c";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #v {
+    grid-area: "v";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #b {
+    grid-area: "b";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #n {
+    grid-area: "n";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #m {
+    grid-area: "m";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #comma {
+    grid-area: "comma";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #fullstop {
+    grid-area: "dot";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #bslash {
+    grid-area: "bslash";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #shift2 {
+    grid-area: "shift2";
+    background-color: silver;
+    border-radius: 0.5rem;
+    width: 5rem;
+  }
+  
+  #ctrl1 {
+    grid-area: "ctrl1";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  #fn {
+    grid-area: "fn";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #window {
+    grid-area: "window";
+    background-color: silver;
+    border-radius: 0.5rem;
+
+  }
+  #alt1 {
+    grid-area: "alt";
+    background-color: silver;
+    border-radius: 0.5rem;
+  
+  }
+  #space {
+    width: 15rem;
+    grid-area: "space";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  #alt2 {
+    grid-area: "alt";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+ 
+  #ctrl2 {
+    grid-area: "ctrl2";
+    background-color: silver;
+    border-radius: 0.5rem;
+  }
+  /* #uparrow {
+    grid-area: "uparrow";
+    background-color: cadetblue;
+    border-radius: 0.5rem;
+  } */
+  #downarrow {
+    grid-area: "downarrow";
+    background-color: silver;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 3.5rem;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #leftarrow {
+    grid-area: "leftarrow";
+    background-color: silver;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 3.5rem;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #rightarrow {
+    grid-area: "rightarrow";
+    background-color: silver;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 3.5rem;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #dot {
+    grid-area: "dot";
+    background-color:silver;
+    border-radius: 0.5rem;
+  }
+  #enter {
+    grid-area: "enter";
+    background-color: silver;
+    border-radius: 0.5rem;
+    width: 4rem;
+  }
+  .container7{
+  gap: 0.6rem;
+  display: grid;
+  width: 15rem;
+  position: relative;
+  top: -18.6rem;
+  left:53.5rem;
+  padding: 0;
+  }
+  
+  .container71{
+  display: grid;
+  grid-template-areas: 'home end up dn';
+  /* gap: 0.5rem; */
+ 
+  }
+  .container72{
+    display: grid;
+    grid-template-areas:'numlock divide asterisk minus';
+    /* gap: 0.5rem; */
+  }
+  .container73{
+    display: grid;
+    grid-template-areas:'seven1 eight1 nine1 plus1';
+    /* gap: 0.5rem; */
+  }
+  .container74{
+    display: grid;
+    grid-template-areas:'four1 five1 six1';
+    /* gap: 0.5rem; */
+  }
+  .container75{
+    /* gap: 0.5rem; */
+    display: grid;
+    grid-template-areas:'one1 two1 three1 enter1';
+  }
+  .container76{
+    /* display: grid; */
+    grid-template-areas: 'zero dot1';
+    gap: 0.5rem;
+  }
+  
+  .row{
+    background-color: silver;
+    border: 0.1rem solid rgba(19, 17, 17, 0.377); 
+    gap: 0.1rem;
+    height: 2.5rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  #home{
+      grid-area: 'home';
+      border-radius: 0.5rem;
+  }
+  #end{
+      grid-area: 'end';
+      border-radius: 0.5rem;
+  }
+  #up{
+      grid-area: 'up';
+      border-radius: 0.5rem;
+  }
+  #dn{
+      grid-area: 'dn';
+      border-radius: 0.5rem;
+  }
+  
+  #numlock{
+      border-radius: 0.5rem;
+      text-align: center;
+  }
+  
+  #divide{
+    grid-area: 'divide';
+    border-radius: 0.5rem;
+  }
+  
+  #asterisk{
+    grid-area: 'asterisk';
+    border-radius: 0.5rem;
+  }
+  
+  #minus{
+    grid-area: 'minus';
+    border-radius: 0.5rem;
+  }
+  
+  #seven1{
+    grid-area: 'seven1';
+    border-radius: 0.5rem;
+  }
+  
+  #eight1{
+    grid-area: 'eight1';
+    border-radius: 0.5rem;
+  }
+  
+  #nine1{
+    grid-area: 'nine1';
+    border-radius: 0.5rem;
+  }
+  
+  #plus1{
+    height: 5.5rem;
+    grid-area: 'plus1';
+    border-radius: 0.5rem;
+  }
+  
+  #four1{
+    grid-area: 'four1';
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 9.5rem;
+    left: 0rem;
+  }
+  
+  #five1{
+    grid-area: 'five1';
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 9.5rem;
+    left: 3.8rem;
+  }
+  
+  #six1{
+    grid-area: 'six1';
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 9.5rem;
+    left: 7.5rem;
+  }
+  
+  #one1{
+    grid-area: 'one1';
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 12.7rem;
+    left: 0rem;
+  }
+  
+  #two1{
+    grid-area: 'two1';
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 12.7rem;
+    left: 3.8rem;
+  }
+  
+  #three1{
+    grid-area: 'three1';
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 12.7rem;
+    left: 7.5rem;
+  }
+  #zero1{
+    width: 7rem;
+    grid-area: 'zero1';
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 16rem;
+    left: 0rem;
+  }
+  
+  #dot1{
+    grid-area: 'dot1';
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 16rem;
+    left: 7.5rem;
+  }
+  
+  #enter1{
+    grid-area: 'enter1';
+    border-radius: 0.5rem;
+    height:6rem;
+    position: absolute;
+    top: 12.5rem;
+    left: 11.5rem;
+  }
